@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfolio Website</title>
@@ -11,21 +11,21 @@
     <!-- To use the font awesome icons, use the following code: -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    
+
 
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 
-    
-    
+
+
 
 </head>
-    
+
 
 <body style="background-color: black;">
-    
+
 
 
 
@@ -46,6 +46,7 @@
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="#services" class="nav__link">skills</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
                 <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
             </ul>
         </nav>
@@ -53,27 +54,33 @@
 
     <section style="margin-left: 30vw;">
         <div>
-            <h1 style="margin-top: 10vh; margin-left: 2vw; color: aquamarine;">HELLO WORLD</h1>
+            <h1 style="margin-top: 10vh; margin-left: 2vw; color: rgb(98, 231, 182);font-weight: 200%;">HELLO WORLD
+            </h1>
         </div>
 
 
-        <div>
-            <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2">
-                <img onclick="Downfunction()" alt="Arrow Down Icon" src="img/arrow1.png"
-                    style=" margin-right: 15vw;"></a>
+        <div style="width: 100px; margin-left: 20%; margin-top: 10%; margin-right: 70%;">
+            <a class=" ct-btn-scroll ct-js-btn-scroll" href="#section2" style="display: block; text-align: center;">
+                <img onclick="Downfunction()" alt="Arrow Down Icon" src="img/downarrow.png"
+                    style=" margin-right: 15vw;width: 80px; height: 80px;"></a>
         </div>
 
 
 
 
     </section>
-
+    <br><br><br>
     <!-- Introduction -->
     <section class="intro" id="home">
-        <h1 class="section__title section__title--intro" style="color: aqua;" id="section2">
+        <h1 class="section__title section__title--intro" style="color: aqua;margin-top: 70px;" id="section2">
             Hi, I am <strong style="color: aliceblue;">Divij Kharche</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">Aspiring SDE</p>
+        <p class="section__subtitle section__subtitle--intro"
+            style="width: 900px; left: 40px; top: 30px;font-weight: 500;font-family: 'Times New Roman', Times, serif;font-size: x-large;">
+            Developer At
+            Heart ||
+            DevOps
+            Enthusiast</p>
         <img src="img/divij1.jpeg" alt="a picture of Divij smiling" class="intro__img">
     </section>
 
@@ -82,20 +89,52 @@
     <section class="my-services" id="services">
         <h2 class="section__title section__title--services">Skills</h2>
         <div class="services">
-            <div class="service">
+            <div class="service" style="margin-left: -300px;position: relative;left: 50px;">
                 <h3>DevOps/Cloud</h3>
-                <p>AWS,Jenkins,CI/CD pipelines,kubernetes,Terraform,Ansible,Git,Nginx
                 <p>
+                <ul class="pill-list">
+                    <li>AWS</li>
+                    <li>GCP</li>
+                    <li>Kubernetes</li>
+                    <li>Terraform</li>
+                    <li>Harness CI/CD</li>
+                    <li>Jenkins</li>
+                    <li>CI/CD pipelines</li>
+                    <li>Ansible</li>
+                    <li>Linux</li>
+                    <li>Bitbucket/Github</li>
+                </ul>
+                </p>
             </div> <!-- / service -->
 
-            <div class="service">
+            <div class="service" style="margin-left: 175px;">
                 <h3>Machine Learning </h3>
-                <p>Machine learning models, Tensorflow models ,Keras</p>
+                <p>
+                <ul class="pill-list">
+                    <li>Tensorflow</li>
+                    <li>Keras</li>
+                    <li>Pytorch</li>
+                    <li>Pygame</li>
+                    <li>SciKit Learn</li>
+
+                </ul>
+                </p>
             </div> <!-- / service -->
 
-            <div class="service">
-                <h3>Others</h3>
-                <p>c++,java,Html,Css,Sql</p>
+            <div class="service" style="position: relative;left: 160px;">
+                <h3>Programming Language/Framworks</h3>
+                <p>
+                <ul class="pill-list">
+                    <li>Typescript</li>
+                    <li>ReactJS</li>
+                    <li>NodeJs/ExpressJS</li>
+                    <li>C++</li>
+                    <li>Python/Flask</li>
+                    <li>HTML/CSS</li>
+
+                </ul>
+
+                </p>
             </div> <!-- / service -->
         </div> <!-- / services -->
 
@@ -108,21 +147,104 @@
         <p class="section__subtitle section__subtitle--about"></p>
 
         <div class="about-me__body">
-            <p style="color: aliceblue;">I am Currently 3rd year B.tech computer science specialisation in Artificial
-                intelligence and Machine
-                learning student at VIT Bhopal University.</p>
-            <p style="color: aliceblue;">I am a person who is very passionate about learning new things and bettering
-                myself. I am always looking
-                for new opportunities to grow and develop my skills. I am a hard worker and I always give 100% to
-                everything that I do.I am a team player and I am always willing to help others. I am a good communicator
-                and I am always willing to share my knowledge with others.</p>
+            <p style="color: aliceblue;">Studied Computer Science with a specialization in Artificial Intelligence and
+                Machine Learning at Vellore Institute of technology (VIT).</p>
+            <p style="color: aliceblue;">I am a person who is very passionate about learning new things and making
+                myself
+                better.<br> My passion lies in the intersection of development, DevOps, and cloud technologies. I find
+                joy
+                in exploring the latest advancements, always eager to leverage technology for efficient and seamless
+                solutions..</p>
         </div>
 
         <img src="img/divij2.jpeg" alt="Divij smiling" class="about-me__img">
     </section>
+    <section class="my-work" id="experience" style="padding-top: 40px ">
+        <h2 class="section__title section__title--work">Experience</h2>
+        <br>
+        <div>
+            <!-- <p class="section__subtitle section__subtitle--intro"
+                style="width: -1000px;height: 10px; left: -310px; top: 30px;font-weight: 550;font-family: 'Times New Roman', Times, serif;font-size: xx-large;color: rgb(9, 9, 9);padding-right: 900px;padding-top: 0px;padding-left: 10px;padding-bottom: 50px;border-bottom: #0f0;">
+                <span
+                    style="font-weight: bold; text-decoration: underline; text-decoration-color: green;">Harness.io</span>
+            </p> -->
+            <!-- <p style="font-family: 'Times New Roman', Times, serif; font-size: xx-large;">
+                <span
+                    style="display: inline-block; font-weight: bold; text-decoration: underline; text-decoration-color: rgb(124, 228, 124); width: -10%;">Harness.io</span>
+            </p> -->
+            <p class="section__title section__title--about"
+                style="color: rgb(238, 241, 244);font-weight: 700;font-size: xxx-large;padding-right: 1350px">
+                Harness.io</p>
+            <p class="section__subtitle section__subtitle--about" style="margin-bottom: 0px;
+            left: 0px ;"></p>
+            <br>
+            <div style="display: flex;">
+                <div
+                    style="border: 2px solid #0f0; padding: 10px; box-shadow: 0 0 10px #0f0; border-radius: 10px;width: 170%">
 
+                    <ul style="list-style-type: disc; color: white;">
+                        <li>
+                            <p
+                                style="list-style-type: disc; padding-left: 20px; color: rgb(247, 251, 247);text-align: left;">
+                                Led
+                                multiple
+                                development projects, focusing on API-driven data integration, and utilized
+                                Typescript (Javascript) to develop an incident notification component for
+                                app.harness.io.
+                                Integrated
+                                feature into main platform, expecting 70%-90% reduction in customer-reported issues
+                                during
+                                incidents.</p>
+                        </li>
+                        <li>
+                            <p
+                                style="list-style-type: disc; padding-left: 20px; color: rgb(247, 251, 247);text-align: left;">
+                                Developed a
+                                weekly automated idea portal dashboard reporting system for report stakeholders using
+                                Python for API data retrieval, data analysis, and data-driven analytical solutions.
+                                Implemented
+                                Harness CI/CD pipelines for seamless automation.</p>
+                        </li>
+                        <li>
+                            <p
+                                style="list-style-type: disc; padding-left: 20px; color: rgb(247, 251, 247);text-align: left;">
+                                Automated the
+                                license renewal process for Harness customers by leveraging Harness CI/CD pipelines
+                                and Bash scripting. Automated API calls and provided customer updates, demonstrating
+                                proficiency in
+                                DevOps methodologies.</p>
+                        </li>
+                        <li>
+                            <p
+                                style="list-style-type: disc; padding-left: 20px; color: rgb(247, 251, 247);text-align: left;">
+                                Implemented a
+                                slack bot which delivers customer centric data to internal teams, created with
+                                ExpressJS and NodeJS.</p>
+                        </li>
+                        <li>
+                            <p
+                                style="list-style-type: disc; padding-left: 20px; color: rgb(247, 251, 247);text-align: left;">
+                                Also helped in
+                                resolving issues of the client, and optimized utilization of the Harness platform,
+                                showcasing expertise in technologies such as Terraform providers, Kubernetes
+                                deployments,
+                                Helm Chart
+                                deployments, AWS, and Harness.</p>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div style="margin-left: 70px;margin-top: 70px;">
+                    <img src="img/logoh.png" style="width: 1000px;height: 300px;">
+                </div>
+            </div>
+            <!-- <img src="img/harnessio.png" style="width: 30%;height: 10%;"> -->
+            <!-- <h3 style="left: 100px;">Harness.io</h3> -->
+        </div>
+    </section>
     <!-- My Work -->
-    <section class="my-work" id="work">
+    <section class="working" id="work">
         <h2 class="section__title section__title--work">My work</h2>
         <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
